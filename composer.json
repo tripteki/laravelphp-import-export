@@ -1,0 +1,52 @@
+{
+    "name": "tripteki/laravelphp-import-export",
+    "version": "1.0.0",
+    "description": "Trip Teknologi's Laravel.php Import Export",
+
+    "readme": "README.md",
+    "license": "MIT",
+    "authors": [ { "name": "Trip Teknologi", "email": "tripteki.company@gmail.com" } ],
+    "homepage": "https://github.com/tripteki/laravelphp-import-export",
+    "support": { "issues": "https://github.com/tripteki/laravelphp-import-export/issues" },
+
+    "require": {
+
+        "php": "^8.0.2",
+
+        "maatwebsite/excel": "^3.1.45",
+        "barryvdh/laravel-dompdf": "^2.0.0"
+    },
+
+    "require-dev": {},
+
+    "suggest": {
+
+        "laravel/lumen-framework": "Required when using lumen framework (^9.0).",
+        "laravel/framework": "Required when using laravel framework (^9.0)."
+    },
+
+    "autoload": {
+
+        "psr-4": {
+
+            "Tripteki\\ImportExport\\": "src/"
+        }
+    },
+
+    "autoload-dev": {},
+
+    "extra": {
+
+        "laravel": {
+
+            "dont-discover": [],
+
+            "providers": [
+
+                "Tripteki\\ImportExport\\Providers\\ImportExportServiceProvider"
+            ],
+
+            "aliases": []
+        }
+    }
+}
